@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://source.unsplash.com/user/erondu/640x320');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+section{
+    color: white;
+     background: url('https://source.unsplash.com/1600x900/?dark,blur');
+      
+      /* background-color: black; */
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* transform: translate(-50%,-50%); */
+    object-fit: cover;
+}
+ .btn{
+    position: absolute;
+    top: 40px;
+    left: 1126px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    color: rgb(254, 255, 255);
+    border: 1px solid rgb(36, 214, 238);   
+    padding: 5px 25px;
+    
+}
+.btn:hover{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border:none;
+    transition: transform 250ms;
+ }
+.linkto{
+    cursor: pointer;
+}
+.vert-move{
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+    text-align: center;
+    position: relative;
+    top: 10px;   
+    color: red;
+    font-family: 'Oswald';
+}
+.vert-move{
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+    
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+h2{
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    top: 2rem;
+    
+}
+.Container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 2rem;
+    /* margin-left: 6rem;
+    margin-right: 1rem; */
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    
+    
+    
+}
+.item{
+    height: 150px;
+    width: 300px;
+    border: 1px solid rgb(36, 214, 245);
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 250ms;
+    cursor: pointer;
+}
+.item:hover {
+    transform: translateY(-10px);
+  }
+.item .card_text{
+    color: white;
+    margin-top: 15px;
+    
+}
+.item:hover{
+    
+    transition: transform 250ms;
+    
+}
+.item h1{
+    font-size: 50px;
+    padding: 1rem;
+
+}
+.item h1:hover{
+    font-size: 50px;
+    transition: transform 1.5s;
+    color: rgb(255, 255, 255);
+}
+.footer{
+    text-align: center;
+    margin-top: 7.5rem;
+}
+.item .time{
+    font-size:35px ;
+}
+.item .time:hover{
+    font-size:36px;
+    color: rgb(36, 214, 245);
+}
+@media only screen and (max-width: 500px) {
+    .vert-move{
+        -webkit-animation: mover 1s infinite  alternate;
+        animation: mover 1s infinite  alternate;
+        text-align: center;
+        position: relative;
+        top: 10px;
+        left: -25px;   
+        color: red;
+        font-family: 'Oswald';
+    }
+    .vert-move{
+        -webkit-animation: mover 1s infinite  alternate;
+        animation: mover 1s infinite  alternate;
+        
+    }
+    @-webkit-keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    @keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    
+    
+    h3{
+        font-size: 10px;
+        text-align: center;
+        position: relative;
+        color: red;
+        font-family: 'Oswald';
+        }
+    h2{
+        position: absolute;
+        left: 34px;
+        top: 55px;
+        margin-bottom: 0px 1rem 4rem 0rem;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 15px;
+        
+
+        
+    }
+    .Container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+        grid-gap: 1rem;
+        justify-content: center;
+        margin-left: 3.5rem;
+        margin-top: 5rem;
+        font-family: 'Playfair Display', serif;
+  }
+  .item
+  {
+        height: 90px;
+        width: 200px;
+        border: 1px solid rgb(255, 255, 255);
+        text-align: center;
+    
+    }
+    .item .card_text{
+        color: white;
+        margin-top: 15px;
+        }
+    .item:hover{
+        color: rgb(109, 9, 9);
+        
+        }
+    .item h1{
+        font-size: 18px;
+        margin-top: 8px;
+        }
+        .item h1:hover{
+            font-size: 25px;
+            margin-top: 8px;
+            }
+    .footer{
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 7px;
+            margin-right: 2.5rem;
+        }
+    .item .time{
+            font-size:13px ;
+        }
+        .item .time:hover{
+            font-size:20px ;
+        }
+    .card_text{
+            font-size: 10px;
+        }
+    section{
+            color: white;
+            background: url('https://source.unsplash.com/800x800/?corona,dark');
+            /* background-color: black; */
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+        }
+        .btn{
+            position: absolute;
+            top: 29px;
+            font-size: 7px;
+            left: 32%;
+            font-weight: 300;
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(36, 214, 238);
+            cursor: pointer;
+            padding: 2px 10px 2px 10px;  
+            background: rgb(63,94,251);
+            background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); 
+        }
+        .btn:hover{
+            background-color: rgb(42, 223, 236);
+            color: white;
+        }
+        }
